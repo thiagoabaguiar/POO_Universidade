@@ -2,7 +2,7 @@ package cursojava.universidade;
 
 public abstract class Pessoa {
 
-    private String nome;
+    protected String nome;
     private int idade;
     private String sexo;
 
@@ -33,6 +33,10 @@ public abstract class Pessoa {
     public final void fazerAniversario() {
         this.idade++;
     }
+    
+    public void pagarMensalidade() {
+        System.out.println("Paguei na classe Pessoa");
+    }
 
     @Override
     public String toString() {
@@ -44,6 +48,5 @@ public abstract class Pessoa {
         sb.append("}");
         return sb.toString();
     }
-    
-    
+
 }
