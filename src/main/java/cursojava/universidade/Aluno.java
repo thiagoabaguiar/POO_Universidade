@@ -21,8 +21,8 @@ public class Aluno extends Pessoa {
         this.curso = curso;
     }
 
-    public void cancelarMatricula() {
-        this.matricula = 0;
+    public void pagarMensalidade() {
+        
     }
 
 }

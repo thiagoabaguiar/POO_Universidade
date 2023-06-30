@@ -1,6 +1,6 @@
 package cursojava.universidade;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     private String nome;
     private int idade;
@@ -30,7 +30,7 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public void fazerAniversario() {
+    public final void fazerAniversario() {
         this.idade++;
     }
 
